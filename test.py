@@ -11,4 +11,6 @@ myFunction(8)
 
 # user1@user1-System-Product-Name:~/Documents/1$ source myvenv/bin/activate
 # (myvenv) user1@user1-System-Product-Name:~/Documents$ python manage.py runserver
+# https://github.com/User000004/my-first-blog.git
+# pa_autoconfigure_django.py --nuke https://github.com/User000004/my-first-blog.git
 
