@@ -22,7 +22,7 @@ console:
   git commit -m "Comment"
   git push
     User000004
-    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
+    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
 pythonanywhere:
   cd ~/german12345.pythonanywhere.com
   git pull

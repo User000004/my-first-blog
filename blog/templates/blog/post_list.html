@@ -1,21 +1,18 @@
-<html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-
+{% extends 'blog/base.html' %}
+{% block content %}
     {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
+        <div class="post">
+            <div class="date">
+                <p>Опубликовано: {{ post.published_date }}</p>
+            </div>
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-        <div>
-            <button><a href="/admin/">Admin pannel</a></button>
-        </div>
-    </body>
-</html>
+
+    <div>
+            <button><a href="/admin/">Admin pannel</a></button><br>
+            <button><a href="https://github.com/User000004/my-first-blog" target="_blank">GitHub</a></button><br>
+            <button><a href="https://www.pythonanywhere.com/user/german12345/" target="_blank">Pythonanywhere</a></button>
+    </div>
+{% endblock %}
