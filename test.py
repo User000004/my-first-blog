@@ -14,3 +14,17 @@ myFunction(8)
 # https://github.com/User000004/my-first-blog.git
 # pa_autoconfigure_django.py --nuke https://github.com/User000004/my-first-blog.git
 
+"""
+console:
+  git status
+  git add --all .
+  git status
+  git commit -m "Comment"
+  git push
+    User000004
+    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
+pythonanywhere:
+  cd ~/german12345.pythonanywhere.com
+  git pull
+
+"""
